@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADE CHECKER</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="page">
+        <h1>GRADE CHECKER</h1>
+        <h3>Type Your Totall Percentage</h3>
+        <input type="text" id="input">
+        <button onclick="check()">SUBMIT</button>
+        <h2 id="result"></h2>
+
+
+    </div>
+
+
+    <script>
+        function check() {
+            var marks = document.getElementById("input").value;
+            var ans1 = "Your Grade is : A+ ";
+            var ans2 = "Your Grade is : A ";
+            var ans3 = "Your Grade is : B ";
+            var ans4 = "Your Grade is : C ";
+            var ans5 = "Your Grade is : D ";
+            var ansf = "Your are Fail";
+            var ans0= "TYPE VALID NUMBER";
+            if (marks <= 50){
+                document.getElementById("result").innerText = ansf;
+            }
+
+            if (marks >51<=60){
+                document.getElementById("result").innerText = ans0;
+            }
+
+            if (marks <= 0){
+                document.getElementById("result").innerText = ans0;
+            }
+
+            if (marks <= 0){
+                document.getElementById("result").innerText = ans0;
+            }
+
+
+
+
+
+
+}
+    </script>
+
+</body>
+
+</html>
